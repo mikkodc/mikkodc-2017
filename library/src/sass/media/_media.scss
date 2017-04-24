@@ -1,0 +1,35 @@
+@media screen and (max-width: 768px) {
+  #slide-menu {
+    width: 100%;
+    text-align: center;
+    right: 0;
+    top: -100vmin;
+    left: 0;
+    opacity: 0;
+    overflow-y: scroll;
+    min-height: 100vh;
+  }
+  #slide-menu .nav-inner {
+    max-width: 300px;
+    margin: 50px auto;
+  }
+  #slide-menu.slide-push-right {
+    top: 0vmin;
+    opacity: 1;
+  }
+  .push-right {
+    left: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #toggle-menu {
+    padding: 10px 15px 14px;
+  }
+  #toggle-menu > span {
+    display: none;
+  }
+}

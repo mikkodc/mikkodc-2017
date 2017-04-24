@@ -1,0 +1,102 @@
+/*--------------------------------------------------------------
+# Global
+--------------------------------------------------------------*/
+
+/*
+  Global Stlyes
+  */
+
+body {
+  position: relative;
+  left: 0;
+  color: #2A3A3F;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+a {
+  position: relative;
+}
+p a {
+  color: $primary;
+  text-decoration: underline;
+}
+p a:hover {
+  text-decoration: none;
+}
+
+/*
+  Global Layout Stlyes
+  */
+
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.inner-container {
+  max-width: 960px;
+  padding: 0 15px;
+  display: block;
+  margin: 0 auto;
+}
+.small-container {
+  max-width: 768px;
+  padding: 0 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+
+.col-half {
+  width: 50%;
+  float: left;
+  height: 100%;
+  position: relative;
+}
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+*[class^="flaticon"] {
+  color: #fff;
+}
+
+.push-right {
+  left: -300px;
+}
+
+.section.fp-auto-height {
+  padding: 50px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-light {
+  & * {
+    color: #fff;
+  }
+}
+
+
+.section-title {
+  font-size: calc(1em + 1.5vw);
+}
+.section-sub-statement {
+  font-size: 1.25em;
+  line-height: 1.75em;
+  margin-bottom: 40px;
+}

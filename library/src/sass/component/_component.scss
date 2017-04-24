@@ -1,0 +1,176 @@
+/*--------------------------------------------------------------
+# COMPONENT
+--------------------------------------------------------------*/
+
+/*
+  Responsivator
+  */
+
+.device {
+  position: relative;
+  width: 544px;
+  height: 320px;
+  display: block;
+  margin: 2rem auto;
+  background: #ddd;
+  border-radius: 15px;
+  border: 30px solid #2b3030;
+  border-bottom: 50px solid #2b3030;
+  overflow: hidden;
+  transform: scale(1) rotate(0deg);
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    left: -50px;
+    opacity: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transform: translateY(-50%) scale(0);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  @at-root .responsive-check .device-desktop {
+    width: 544px;
+    height: 320px;
+  }
+}
+
+
+.responsive-check .device-tablet,
+.responsive-check .device-tablet-portrait {
+  width: 409px;
+  height: 307px;
+  margin: 125px auto;
+  border: 60px solid #2b3030;
+  border-top: 15px solid #2b3030;
+  border-bottom: 15px solid #2b3030;
+  border-right: 30px solid #2b3030;
+}
+.responsive-check .device-tablet-portrait,
+.responsive-check .device-mobile-portrait {
+  transform: rotate(-90deg);
+}
+.responsive-check .device-mobile,
+.responsive-check .device-mobile-portrait {
+  width: 364px;
+  height: 208px;
+  border: 60px solid #2b3030;
+  border-top: 10px solid #2b3030;
+  border-bottom: 10px solid #2b3030;
+  border-right: 50px solid #2b3030;
+  border-radius: 20px;
+}
+.responsive-check .device-tablet:before,
+.responsive-check .device-tablet-portrait:before,
+.responsive-check .device-mobile:before,
+.responsive-check .device-mobile-portrait:before {
+  transform: translateY(-50%) scale(0.9);
+  opacity: 1;
+}
+.responsive-check .device-mobile:before,
+.responsive-check .device-mobile-portrait:before {
+  transform: translateY(-50%) scale(1);
+}
+.responsive-check .device .device-screen {
+  position: absolute;
+  top: 50.5%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.responsive-check .device.device-tablet .device-screen,
+.responsive-check .device.device-mobile .device-screen {
+  top: 51%;
+}
+.responsive-check .device.device-mobile-portrait .device-screen,
+.responsive-check .device.device-tablet-portrait .device-screen {
+    left: 49.5%;
+}
+.responsive-check .device.device-mobile-portrait .device-screen {
+  top: 50%;
+}
+.responsive-check .device iframe {
+  width: 1360px;
+  height: 800px;
+  border: 0;
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -o-transform: scale(0.4);
+  transform: scale(0.4);
+
+}
+.responsive-check .device-desktop iframe {
+  width: 1360px;
+  height: 800px;
+}
+.responsive-check .device-tablet-portrait iframe {
+  width: 768px;
+  height: 1024px;
+}
+.responsive-check .device-tablet iframe {
+  height: 768px;
+  width: 1024px;
+}
+.responsive-check .device-mobile iframe,
+.responsive-check .device-mobile-portrait iframe {
+  height: 320px;
+  width: 560px;
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  -o-transform: scale(0.65);
+  transform: scale(0.65);
+}
+.responsive-check .device-tablet-portrait .device-screen,
+.responsive-check .device-mobile-portrait .device-screen {
+  transform: translate(-50%,-50%) rotate(90deg);
+}
+.responsive-check .device-mobile-portrait iframe {
+  width: 320px;
+  height: 560px;
+}
+
+
+#contact {
+  background-color: $primary;
+
+  a {
+    &.btn-default {
+      border: 2px solid $black;
+      color: $black;
+    }
+  }
+
+  p a {
+    text-decoration: none;
+
+    &:before,
+    &:after {
+      @include default-animation;
+    }
+    &:before {
+      position: static;
+      content: "[";
+      opacity: 1;
+      margin-right: 5px;
+    }
+    &:after {
+      position: static;
+      content: "]";
+      margin-left: 5px;
+    }
+    &:hover {
+      &:before {
+        padding-right: 5px;
+      }
+      &:after {
+        padding-left: 5px;
+      }
+    }
+  }
+}

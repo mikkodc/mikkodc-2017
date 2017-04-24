@@ -1,0 +1,86 @@
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+
+// Global Button Style
+%button {
+  min-width: 100px;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+// Custom Button Style
+%twitter-background {
+  color: #fff;
+  background: #55acee;
+}
+%facebook-background {
+  color: #fff;
+  background: #3b5998;
+}
+
+.btn {
+  &--twitter {
+    @extend %button;
+    @extend %twitter-background;
+  }
+  &--facebook {
+    @extend %button;
+    @extend %facebook-background;
+  }
+}
+
+.btn-group {
+  margin: 10px 0;
+  a {
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}
+
+.btn {
+ color: white;
+ text-decoration:none;
+ padding:15px 50px;
+ font-size: 1em;
+ font-weight: bold;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ border: 2px solid #fff;
+ position: relative;
+ display: inline-block;
+ vertical-align: middle;
+}
+
+.btn-ghost {
+  color: #fff;
+}
+
+.btn-arrow-right {
+  overflow: hidden;
+
+  &:after {
+    @include default-animation;
+    position: absolute;
+    right: -20px;
+    content: '→';
+  }
+
+  &:hover {
+    padding-right: 55px;
+    padding-left: 45px;
+    &:after {
+      right: 20px;
+    }
+  }
+
+}
+
+.btn-default {
+  @include button-bg(transparent);
+}
+
+.btn-primary {
+   @include button-bg($primary);
+}

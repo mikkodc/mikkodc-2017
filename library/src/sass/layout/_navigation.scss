@@ -1,0 +1,122 @@
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+/*
+  Main Navigation - Slide Menu
+  */
+
+#slide-menu {
+  position: fixed;
+  z-index: 5;
+  width: 300px;
+  right: -300px;
+  background-color: #151e1b;
+  height: 100vmin;
+  padding: 38px 30px 0 50px;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'ElenarLove', sans-serif;
+
+  &.slide-push-right {
+    right: 0;
+  }
+}
+
+@mixin slide-style {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+}
+
+@mixin inline-list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@mixin slide-text {
+  font-size: 12px;
+  opacity: 0.4;
+  line-height: 1.2em;
+  color: #8ba79d;
+}
+
+@mixin custom-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  line-height: 32px;
+  font-size: 24px;
+  font-family: 'ElenarLove', sans-serif;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.nav-list {
+  @include slide-style;
+
+  a {
+    @include custom-link;
+
+    &.active {
+      color: $primary;
+    }
+  }
+}
+
+.social-icons {
+  @include slide-style;
+
+  li {
+    @include inline-list;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    a {
+      @include custom-link;
+      line-height: 24px;
+
+      i {
+
+        &:before {
+          font-size: 24px;
+          margin-right: 0;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.25);
+
+        i {
+          color: $primary;
+        }
+      }
+    }
+
+  }
+}
+
+.contact-list {
+  @include slide-style;
+
+  li {
+    font-size: 14px;
+    line-height: 1.2em;
+
+    a {
+      color: $primary;
+    }
+  }
+}
+
+.copyright {
+  font-size: 12px;
+  opacity: 0.4;
+  line-height: 1.2em;
+  color: #8ba79d;
+}

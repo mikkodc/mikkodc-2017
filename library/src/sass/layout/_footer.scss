@@ -1,0 +1,31 @@
+footer {
+  background-color: $black;
+  color: darken(#fff, 70%);
+
+  svg {
+    max-height: 40px;
+  }
+
+  .social-icons {
+    margin-bottom: 0;
+
+    li {
+      a {
+
+        &:hover {
+
+          i {
+            &:before {
+              color:$primary;
+            }
+          }
+        }
+        i {
+          &:before {
+            color:darken(#fff, 70%);
+          }
+        }
+      }
+    }
+  }
+}
