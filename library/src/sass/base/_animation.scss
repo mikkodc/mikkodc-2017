@@ -20,8 +20,7 @@
   transition-timing-function: ease;
 }
 
-.fade-up-line:before,
-p a:before {
+.fade-up-line:before {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -34,8 +33,7 @@ p a:before {
   transform: translateY(5px);
   transition: all 0.3s ease;
 }
-.fade-up-line:hover:before,
-p a:hover:before {
+.fade-up-line:hover:before {
   opacity: 0.5;
   transform: translateY(0);
 }

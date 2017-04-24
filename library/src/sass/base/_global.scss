@@ -14,13 +14,12 @@ body {
 }
 a {
   position: relative;
+  text-decoration: none;
 }
 p a {
-  color: $primary;
-  text-decoration: underline;
-}
-p a:hover {
-  text-decoration: none;
+  background-color: $primary;
+  color: #fff;
+  padding: 2px 3px;
 }
 
 /*
