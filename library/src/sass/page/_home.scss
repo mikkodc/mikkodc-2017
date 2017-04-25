@@ -40,3 +40,66 @@
     }
   }
 }
+#about {
+
+  .section-full-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  #profile-picture {
+    background: #000 url('../../src/img/about-mikkodc_header.jpg') right center/cover no-repeat;
+  }
+
+  .profile {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    & > *:not(.profile__name):not(.section-title) {
+      margin-bottom: 30px;
+    }
+    .section-title {
+      font-size: 1em;
+      margin-top: 0;
+      font-weight: normal;
+    }
+    &__name {
+      font-size: calc(1em + 1.5vw);
+      margin-bottom: 15px;
+      font-weight: 900;
+      margin-bottom: 10px
+    }
+    &__title {
+      margin-top: 0;
+      font-size: 1em;
+    }
+    &__description {
+    }
+    &__experience {
+      background-color: $gray;
+      padding: 20px 30px;
+
+      &--title {
+        margin-bottom: 15px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: $primary;
+
+        span {
+          font-size: 80%;
+        }
+      }
+
+      &--description {
+        p {
+          margin: 0;
+        }
+      }
+    }
+    &__skill {
+      &--description {
+        opacity: 0.5;
+      }
+    }
+  }
+}

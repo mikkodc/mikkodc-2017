@@ -4,6 +4,10 @@
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+@mixin ease-animation {
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
 
 // Button Mixins
 @mixin button-bg($bg) {

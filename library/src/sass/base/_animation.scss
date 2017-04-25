@@ -16,8 +16,7 @@
 .hover-ease,
 .hover-ease *,
 .hover-ease *:before {
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
+  @include ease-animation;
 }
 
 .fade-up-line:before {

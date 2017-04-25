@@ -1,5 +1,26 @@
 $(document).ready(function() {
 
+  // Progress Bar
+  $('.skillbar').each(function(){
+  	$(this).find('.skillbar-bar').animate({
+  		width:$(this).attr('data-percent')
+  	},2000);
+  });
+
+  // Tabs
+  $('.tabs .tab-links a').on('click', function(e)  {
+    var currentAttrValue = $(this).attr('href');
+
+    // Show/Hide Tabs
+    $('.tabs ' + currentAttrValue).show().siblings().hide();
+
+    // Change/remove current tab to active
+    $(this).parent('li').addClass('active').siblings().removeClass('active');
+
+    e.preventDefault();
+  });
+
+
   // Hide Header on Scroll \\
   // On scroll down
   var didScroll;
@@ -151,7 +172,11 @@ $(document).ready(function() {
     }, 400)
   }
 
+
+
 });
+
+
 //Tilter
 
 ;(function(window) {

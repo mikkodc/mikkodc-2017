@@ -20,7 +20,7 @@ gulp.task('lint', function() {
 // Browser Sync Options
 gulp.task('browser-sync', ['sass'], function() {
     browserSync.init({
-      proxy: "http://localhost/mikkodc/",
+      proxy: "http://localhost:8888/portfolio/",
       notify: false
     });
 });
