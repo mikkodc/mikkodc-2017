@@ -20,6 +20,10 @@ $(document).ready(function() {
     e.preventDefault();
   });
 
+  // Slider
+  $('.profile__experience').slick({
+    arrows: true,
+  });
 
   // Hide Header on Scroll \\
   // On scroll down

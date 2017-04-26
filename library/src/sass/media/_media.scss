@@ -1,3 +1,17 @@
+@media screen and (max-width: 990px) {
+  #about {
+    .col-half {
+      width: 100%;
+      height: auto;
+      float: none;
+    }
+    #profile-picture {
+      height: 400px;
+      background-position: center bottom;
+      background-size: contain;
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   #slide-menu {
     width: 100%;

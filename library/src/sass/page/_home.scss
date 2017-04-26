@@ -48,7 +48,11 @@
   }
 
   #profile-picture {
-    background: #000 url('../../src/img/about-mikkodc_header.jpg') right center/cover no-repeat;
+    background-color: #21baae;
+    background-image: url('../../src/img/mikko-contrast.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .profile {
@@ -61,7 +65,7 @@
     .section-title {
       font-size: 1em;
       margin-top: 0;
-      font-weight: normal;
+      font-weight: bold;
     }
     &__name {
       font-size: calc(1em + 1.5vw);
@@ -99,6 +103,7 @@
     &__skill {
       &--description {
         opacity: 0.5;
+        display: block;
       }
     }
   }
