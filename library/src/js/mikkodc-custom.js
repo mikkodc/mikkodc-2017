@@ -20,6 +20,18 @@ $(document).ready(function() {
     e.preventDefault();
   });
 
+  // Reveal
+  window.sr = ScrollReveal({ reset: true });
+
+  sr.reveal('.foo', {
+    duration: 800,
+    origin: 'bottom',
+    distance: '100px',
+    scale: 1,
+    opacity: 0,
+    viewFactor: 0.3,
+  }, 50);
+
   // Slider
   $('.profile__experience').slick({
     arrows: true,
@@ -65,14 +77,6 @@ $(document).ready(function() {
       lastScrollTop = st;
   }
 
-  // FullPage JS Settings \\
-  $('#fullpage').fullpage({
-    css3: true,
-    autoScrolling:false,
-		normalScrollElements: '#portfolio, .element2',
-    fitToSection:false
-  });
-
   // Hide Menu \\
   $('html').click(function() {
     $('body').removeClass('push-right');
@@ -93,9 +97,6 @@ $(document).ready(function() {
 
     // Changes the menu style
     $('#hamburger-menu').toggleClass('open');
-
-    $.fn.fullpage.setMouseWheelScrolling(false);
-    $.fn.fullpage.setAllowScrolling(false);
 
     // Stops the event from repeating again
     event.stopPropagation();

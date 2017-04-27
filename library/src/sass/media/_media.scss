@@ -1,6 +1,10 @@
 @media screen and (max-width: 990px) {
   #about {
+    display: inline;
+
     .col-half {
+      display: inline-block;
+      flex: 0;
       width: 100%;
       height: auto;
       float: none;

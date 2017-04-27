@@ -41,10 +41,12 @@
   }
 }
 #about {
+  position: relative;
+  padding: 0;
+  display: flex;
 
-  .section-full-content {
-    padding-left: 50px;
-    padding-right: 50px;
+  .col-half {
+    flex: 1;
   }
 
   #profile-picture {
@@ -56,8 +58,7 @@
   }
 
   .profile {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 40px 50px;
 
     & > *:not(.profile__name):not(.section-title) {
       margin-bottom: 30px;
