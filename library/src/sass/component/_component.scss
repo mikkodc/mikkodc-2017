@@ -149,17 +149,22 @@
 
 .slider-container {
   position: relative;
+  background-color: $gray;
 
   .slider-paginator {
     ul {
       list-style: none;
+      display: inline-block;
+      margin-top: 0;
+      padding-left: 30px;
 
       li {
         position: relative;
         width: 20px;
-        height: 20px;
+        height: 25px;
         background-color: $primary;
         padding: 5px;
+        display: inline-block;
 
         &:before {
           content: '';
@@ -255,13 +260,13 @@
   float: left;
 
  	width: 33.33%;
- 	height: 415px;
- 	margin: 1.5em 2.5em;
 
  	color: #fff;
 
  	flex: none;
  	perspective: 1000px;
+
+  padding: 20px;
  }
 
  .tilter * {
@@ -281,7 +286,6 @@
  	display: block;
 
  	width: 100%;
- 	height: 100%;
  	margin: 0;
  }
 
@@ -318,7 +322,7 @@
  }
 
  .tilter__deco--overlay {
- 	background-image: linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
+ 	background: linear-gradient(45deg, rgba(2,38,34,0.4) 0%,rgba(34,190,177,0.4) 100%);
  }
 
  .tilter__deco--shine div {
@@ -329,7 +333,7 @@
  	width: 200%;
  	height: 200%;
 
- 	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
+ 	background: linear-gradient(45deg, rgba(2,38,34,0.4) 0%,rgba(34,190,177,0.4) 100%);
  }
 
  .tilter__deco--lines {
@@ -343,7 +347,7 @@
  	bottom: 0;
 
  	width: 100%;
- 	padding: 4em;
+ 	padding: 20px;
  }
 
  .tilter__title {
@@ -361,23 +365,6 @@
 
  	font-size: 0.85em;
  }
-
- /* Example 5 (line animating) */
- .tilter .tilter__deco--lines path {
- 	transition: stroke-dashoffset 0.7s;
-
- 	stroke-dasharray: 1270;
- 	stroke-dashoffset: 1270;
- }
-
- .tilter:hover .tilter__deco--lines path {
- 	stroke-dashoffset: 0;
- }
-
- .tilter .tilter__figure::before {
- 	box-shadow: none;
- }
-
 
 #contact {
   background-color: $primary;

@@ -36,6 +36,9 @@ p {
 
   }
 }
+img {
+  max-width: 100%;
+}
 
 /*
   Global Layout Stlyes
@@ -45,11 +48,11 @@ p {
   height: 100%;
 }
 .container {
-  margin-left: 50px;
-  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .inner-container {
-  max-width: 960px;
+  max-width: 1240px;
   padding: 0 15px;
   display: block;
   margin: 0 auto;
@@ -87,6 +90,10 @@ section {
 
 .col-half {
   width: 50%;
+  float: left;
+}
+.three-col {
+  width: 33.33%;
   float: left;
 }
 .center-content {

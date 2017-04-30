@@ -1,3 +1,61 @@
 #portfolio {
   background-color: #eee;
+  padding: 30px 15px;
+}
+.project-info {
+  padding-top: 50px;
+  margin-bottom: 40px;
+
+  & > div {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      position: relative;
+      line-height: 2em;
+      font-size: 0.9em;
+    }
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .date {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  .project-text {
+    width: 50%;
+
+    h1 {
+      margin-bottom: 15px;
+    }
+
+    .website-link {
+      margin-top: 0;
+    }
+
+    i {
+      &:before {
+        color: $primary;
+      }
+    }
+  }
+
+  .project-services,
+  .project-meta,
+  .project-date {
+    width: 16.66%;
+  }
+}
+.portfolio-showcase {
+  padding-bottom: 50px;
 }

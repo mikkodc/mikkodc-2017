@@ -1,4 +1,30 @@
+@media screen and (max-width: 1320px) {
+  .inner-container {
+    max-width: 1140px;
+  }
+  #portfolio-item {
+    .project-info {
+      .project-text {
+        float: none;
+        width: 100%;
+      }
+      .project-services,
+      .project-meta,
+      .project-date {
+        width: 33.33%;
+      }
+    }
+  }
+}
 @media screen and (max-width: 990px) {
+  .btn-group {
+    text-align: center;
+  }
+  #intro-section {
+    .intro-title {
+      text-align: center;
+    }
+  }
   #about {
     display: inline;
 
@@ -9,11 +35,17 @@
       height: auto;
       float: none;
     }
+    .profile {
+      padding: 20px 25px;
+    }
     #profile-picture {
       height: 400px;
       background-position: center bottom;
       background-size: contain;
     }
+  }
+  .tilter {
+    width: 50%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -21,28 +53,72 @@
     width: 100%;
     text-align: center;
     right: 0;
-    top: -100vmin;
+    top: -100vh;
     left: 0;
     opacity: 0;
     overflow-y: scroll;
     min-height: 100vh;
   }
-  #slide-menu .nav-inner {
-    max-width: 300px;
-    margin: 50px auto;
-  }
-  #slide-menu.slide-push-right {
-    top: 0vmin;
-    opacity: 1;
+  #slide-menu {
+    padding-left: 30px;
+
+    &.slide-push-right {
+      top: 0vmin;
+      opacity: 1;
+    }
+    .nav-inner {
+      max-width: 300px;
+      margin: 50px auto;
+    }
   }
   .push-right {
     left: auto;
   }
+  #main-header  {
+    box-sizing: border-box;
+
+    &.push-right {
+      margin-left: 0;
+      right: 0;
+    }
+  }
+  .nav-list {
+    li.coming-soon {
+
+      button {
+        text-align: center;
+      }
+    }
+  }
+  .btn-group {
+    a {
+      display: block;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  #portfolio-item {
+    .project-info {
+      .project-services,
+      .project-meta,
+      .project-date {
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+  .tilter {
+    width: 100%;
+    float: none;
+  }
 }
 @media screen and (max-width: 480px) {
   .container {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   #toggle-menu {
     padding: 10px 15px 14px;
