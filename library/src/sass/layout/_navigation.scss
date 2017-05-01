@@ -20,7 +20,8 @@
 
   &.slide-push-right {
     right: 0;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
 

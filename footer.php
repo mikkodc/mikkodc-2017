@@ -17,9 +17,10 @@
     </a>
     <p>Codes from my fingertips &copy; MikkoDC 2017.</p>
     <ul class="social-icons">
-      <li><a href=""><i class="flaticon-facebook-social-network-logo"></i></a></li>
-      <li><a href=""><i class="flaticon-social-media"></i></a></li>
-      <li><a href=""><i class="flaticon-instagram-logo"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/mikkodc/" target="_blank"><i class="flaticon-linkedin"></i></a></li>
+      <li><a href="https://www.facebook.com/Mikkoooow" target="_blank"><i class="flaticon-facebook-social-network-logo"></i></a></li>
+      <li><a href="https://twitter.com/Mikkoooow" target="_blank"><i class="flaticon-social-media"></i></a></li>
+      <li><a href="https://www.instagram.com/mikkodc/" target="_blank"><i class="flaticon-instagram-logo"></i></a></li>
     </ul>
   </div>
 </footer>
