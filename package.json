@@ -21,9 +21,9 @@
     "gulp-watch": "^4.3.11",
     "jshint": "^2.9.4"
   },
-  "name": "Lucerne",
-  "description": "Lucerne Theme",
-  "version": "1.0.0",
+  "name": "MikkoDC",
+  "description": "MikkoDC Portfolio 2017",
+  "version": "2.0.0",
   "main": "gulpfile.js",
   "dependencies": {
     "autoprefixer": "^6.5.3",
@@ -45,7 +45,9 @@
     "test": ""
   },
   "keywords": [
-    "August99"
+    "MikkoDC",
+    "Web Developer",
+    "Portfolio"
   ],
   "author": "Mikko de Castro <mikkodecastro@ymail.com>",
   "license": "ISC"
