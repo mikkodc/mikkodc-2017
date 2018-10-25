@@ -97,6 +97,24 @@
       <div class="profile__experience">
         <div class="experience-item">
           <div class="profile__experience--title">
+            C2NATIVE - Web Technologist <span>( AUG 2017 - PRESENT )</span>
+          </div>
+          <div class="profile__experience--description">
+            <p>Exposed in different web technologies such as Game Development on web and Virtual Reality platforms, media communications using Augmented Reality, and online website campaigns.</p>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="profile__experience--title">
+            Campaign Magazine <span>( APR 2018 )</span>
+          </div>
+          <div class="profile__experience--description">
+            <p>Voted as one of the 30 faces to watch under 30 yrs old in the UAE. The faces to watch edition showcases people from the digital and creative industries and displays how their creativity enhances the data-age.</p>
+            <br>
+            <p>Read the article <a href="https://campaignme.com/2018/04/12/113930/faces-watch-2018-digital-creative/" target="_blank">here.</a></p>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="profile__experience--title">
             August99 - Web Developer <span>( JUN 2015 - MAR 2017 )</span>
           </div>
           <div class="profile__experience--description">
