@@ -1,54 +1,28 @@
 {
-  "devDependencies": {
-    "autoprefixer": "^6.5.3",
-    "bootstrap-sass": "^3.3.7",
-    "bower": "^1.8.0",
-    "browser-sync": "^2.18.5",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-jshint": "^2.0.4",
-    "gulp-load-plugins": "^1.4.0",
-    "gulp-newer": "^1.3.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.9.1",
-    "gulp-uglify": "^2.0.0",
-    "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.11",
-    "jshint": "^2.9.4"
-  },
-  "name": "MikkoDC",
-  "description": "MikkoDC Portfolio 2017",
-  "version": "2.0.0",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "autoprefixer": "^6.5.3",
-    "browser-sync": "^2.18.5",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-load-plugins": "^1.4.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.9.1",
-    "gulp-uglify": "^2.0.0",
-    "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.11"
-  },
+  "name": "mikkodc",
+  "version": "1.0.0",
+  "description": "Developer Portfolio Website using NuxtJS",
+  "author": "MikkoDC",
+  "private": true,
   "scripts": {
-    "test": ""
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
-  "keywords": [
-    "MikkoDC",
-    "Web Developer",
-    "Portfolio"
-  ],
-  "author": "Mikko de Castro <mikkodecastro@ymail.com>",
-  "license": "ISC"
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "bootstrap": "^4.1.3",
+    "@nuxtjs/axios": "^5.3.6"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.16.4",
+    "sass-loader": "^7.1.0"
+  }
 }
