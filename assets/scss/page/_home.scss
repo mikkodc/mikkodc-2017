@@ -1,0 +1,110 @@
+#intro-section {
+  position: relative;
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 500px;
+
+  @at-root .intro-title {
+    font-size: calc(1em + 2.5vw);
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    position: relative;
+  }
+
+  .intro-title {
+    &:before,
+    &:after {
+      opacity: 0.2;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    &:before {
+      position: absolute;
+      content: '<h1>';
+      top: -20px;
+    }
+    &:after {
+      content: '</h1>';
+      margin-left: 10px;
+    }
+    small {
+      font-size: 75%;
+    }
+    .hidden {
+      opacity:0;
+    }
+    .console-underscore {
+       display:inline-block;
+      position:relative;
+      top:-0.14em;
+      left:10px;
+    }
+  }
+}
+#about {
+  position: relative;
+  padding: 0;
+  display: flex;
+
+  .col-half {
+    flex: 1;
+  }
+
+  #profile-picture {
+    background-color: #21baae;
+    background-image: url('../../assets/img/mikko-contrast.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .profile {
+    padding: 40px 50px;
+
+    & > *:not(.profile__name):not(.section-title) {
+      margin-bottom: 30px;
+    }
+    .section-title {
+      font-size: 1em;
+      margin-top: 0;
+      font-weight: bold;
+    }
+    &__name {
+      font-size: calc(1em + 1.5vw);
+      margin-bottom: 15px;
+      font-weight: 900;
+      margin-bottom: 10px
+    }
+    &__title {
+      margin-top: 0;
+      font-size: 1em;
+    }
+    &__experience {
+      padding: 20px 30px;
+
+      &--title {
+        margin-bottom: 15px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: $primary;
+
+        span {
+          font-size: 80%;
+        }
+      }
+
+      &--description {
+        p {
+          margin: 0;
+        }
+      }
+    }
+    &__skill {
+      &--description {
+        opacity: 0.5;
+        display: block;
+      }
+    }
+  }
+}

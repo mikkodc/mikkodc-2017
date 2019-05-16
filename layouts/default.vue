@@ -6,16 +6,7 @@
   </div>
 </template>
 
-<style lang="scss"> 
-body {
-  background-color: #000;
-}
-.bg-primary {
-  background-color: #11625a!important;
-}
-.bg-secondary {
-  background-color: #151e1b!important;
-}
+<style lang="scss">
 </style>
 
 <script>

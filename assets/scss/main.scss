@@ -1,0 +1,64 @@
+/*!
+Theme Name: MikkoDC Portfolio
+Author: Mikko de Castro
+Author URI: http://www.mikkodc.com
+Description: Redesign Stylesheet for portfolio website
+Version: 1.0.0
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Utils       - Sasstools (includes mixins, functions, variables, etc.)
+# Base        - Boilerplate of the project (includes resets, globals, etc)
+# Vendors     - Third-party styles
+# Layout      - Main sections of the template
+# Page        - Main pages of the template
+# Components  - Main components of the template
+# Media       - Media Queries of the Template
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Utils
+--------------------------------------------------------------*/
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/variables";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/normalize";
+
+@import "base/colors";
+@import "base/typography";
+@import "base/animation";
+@import "base/buttons";
+@import "base/global";
+
+/*--------------------------------------------------------------
+# Vendor
+--------------------------------------------------------------*/
+@import "vendor/animate";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/navigation";
+
+/*--------------------------------------------------------------
+# Page
+--------------------------------------------------------------*/
+@import "page/home";
+@import "page/portfolio";
+@import "page/blog";
+
+/*--------------------------------------------------------------
+# Component
+--------------------------------------------------------------*/
+@import "component/component";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
