@@ -1,0 +1,24 @@
+{
+  "socialLinks":[
+    {
+      "name": "LinkedIn",
+      "slug": "linkedin",
+      "url": "https://www.linkedin.com/in/mikkodc/"
+    },
+    {
+      "name": "Facebook",
+      "slug": "facebook-social-network-logo",
+      "url": "https://www.linkedin.com/in/mikkodc/"
+    },
+    {
+      "name": "Twitter",
+      "slug": "social-media",
+      "url": "https://twitter.com/Mikkoooow"
+    },
+    {
+      "name": "Instagram",
+      "slug": "instagram-logo",
+      "url": "https://www.instagram.com/mikkodc/"
+    }
+  ]
+}

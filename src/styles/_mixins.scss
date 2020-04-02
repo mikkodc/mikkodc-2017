@@ -1,0 +1,82 @@
+@mixin slide-style {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+}
+
+@mixin inline-list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@mixin slide-text {
+  font-size: 12px;
+  opacity: 0.4;
+  line-height: 1.2em;
+  color: #8ba79d;
+}
+
+@mixin custom-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  line-height: 32px;
+  font-size: 24px;
+  font-family: 'ElenarLove', sans-serif;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+
+// Animation Mixins
+@mixin default-animation {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@mixin ease-animation {
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+// Button Mixins
+@mixin button-bg($bg) {
+
+  @if $bg == transparent {
+    border: 2px solid darken(#fff, 20%);
+    color: darken(#fff, 20%);
+  } @else {
+    border: 2px solid $bg;
+  }
+
+  background: $bg;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  }
+}
+
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

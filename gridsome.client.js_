@@ -1,0 +1,21 @@
+import Vuex from 'vuex'
+
+export default function (Vue, { appOptions }) {
+  Vue.use(Vuex)
+
+  appOptions.store = new Vuex.Store({
+    state: {
+      navActive: false
+    },
+    mutations: {
+      toggleNav (state) {
+        state = !state;
+      }
+    },
+    actions: {
+      toggleNav(context) {
+        context.commit('toggleNav')
+      }
+    }
+  })
+}
