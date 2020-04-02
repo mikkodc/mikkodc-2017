@@ -1,14 +1,6 @@
 {
   "bankAccount": [
     {
-      "name": "Emirates",
-      "sub": "NBD",
-      "accountNum": "1015367926001",
-      "iban": "AE040260001015367926001",
-      "swift": "EBILAEAD",
-      "type": "master"
-    },
-    {
       "name": "BDO",
       "sub": "Bank",
       "accountNum": "007780252695",
@@ -22,7 +14,15 @@
       "accountNum": "0659276909",
       "iban": "",
       "swift": "",
-      "type": "visa"
+      "type": "master"
+    },
+    {
+      "name": "Emirates",
+      "sub": "NBD",
+      "accountNum": "1015367926001",
+      "iban": "AE040260001015367926001",
+      "swift": "EBILAEAD",
+      "type": "master"
     }
   ]
 }
