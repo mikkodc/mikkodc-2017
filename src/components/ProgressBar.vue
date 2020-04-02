@@ -1,4 +1,4 @@
-<template>
+<template>  
   <div class="profile__skills">
     <div class="skillbar clearfix " data-percent="75%">
       <div class="skillbar-title"><span>Wordpress</span></div>
